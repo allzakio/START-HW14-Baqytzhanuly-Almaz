@@ -56,15 +56,63 @@
 		C167A1292A4D38B90033B2AC /* START-HW14-Baqytzhanuly Almaz */ = {
 			isa = PBXGroup;
 			children = (
-				C167A12A2A4D38B90033B2AC /* AppDelegate.swift */,
-				C167A12C2A4D38B90033B2AC /* SceneDelegate.swift */,
-				C167A12E2A4D38B90033B2AC /* MainViewController.swift */,
-				C167A1332A4D38BB0033B2AC /* Assets.xcassets */,
-				C167A1352A4D38BB0033B2AC /* LaunchScreen.storyboard */,
-				C167A1382A4D38BB0033B2AC /* Info.plist */,
-				C167A1402A4D858B0033B2AC /* TabBarController.swift */,
+				C167A1462A4D90690033B2AC /* Sources */,
+				C167A1452A4D904A0033B2AC /* Resources */,
 			);
 			path = "START-HW14-Baqytzhanuly Almaz";
+			sourceTree = "<group>";
+		};
+		C167A1422A4D8FB50033B2AC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C167A12E2A4D38B90033B2AC /* MainViewController.swift */,
+				C167A1402A4D858B0033B2AC /* TabBarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C167A1442A4D900E0033B2AC /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				C167A1382A4D38BB0033B2AC /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		C167A1452A4D904A0033B2AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C167A1332A4D38BB0033B2AC /* Assets.xcassets */,
+				C167A1442A4D900E0033B2AC /* Configuration */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C167A1462A4D90690033B2AC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C167A1482A4D90E00033B2AC /* App & SceneDelegate */,
+				C167A1422A4D8FB50033B2AC /* Controllers */,
+				C167A1472A4D90B70033B2AC /* Storyboards */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C167A1472A4D90B70033B2AC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C167A1352A4D38BB0033B2AC /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C167A1482A4D90E00033B2AC /* App & SceneDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C167A12A2A4D38B90033B2AC /* AppDelegate.swift */,
+				C167A12C2A4D38B90033B2AC /* SceneDelegate.swift */,
+			);
+			path = "App & SceneDelegate";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
