@@ -12,7 +12,7 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tabBar.tintColor = .systemBlue
-        tabBar.backgroundColor = .white
+        tabBar.backgroundColor = .systemBackground
 
         setupTabBarViewControllers()
     }
@@ -32,12 +32,13 @@ class TabBarController: UITabBarController {
         forYou.view.backgroundColor = .systemBackground
         let forYouNavigationController = UINavigationController(rootViewController: forYou)
         
-        let albums = MainViewController()
+        let albums = MyAlbumsViewController()
         albums.tabBarItem = UITabBarItem(title: "Альбомы",
                                          image: UIImage(systemName: "square.stack.fill"),
                                          tag: 2)
         albums.view.backgroundColor = .systemBackground
         let albumsNavigationController = UINavigationController(rootViewController: albums)
+        albumsNavigationController.navigationBar.prefersLargeTitles = true
         
         let search = UIViewController()
         search.tabBarItem = UITabBarItem(title: "Поиск",
@@ -47,8 +48,8 @@ class TabBarController: UITabBarController {
         let searchNavigationController = UINavigationController(rootViewController: search)
         
         let controllers = [mediaLibraryNavigationController,
-                           albumsNavigationController,
                            forYouNavigationController,
+                           albumsNavigationController,
                            searchNavigationController]
         
         self.setViewControllers(controllers, animated: true)
